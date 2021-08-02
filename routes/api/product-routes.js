@@ -129,7 +129,7 @@ router.put("/:id", (req, res) => {
 router.delete("/:id", async (req, res) => {
   // delete one product by its `id` value
   try {
-    const deletedProduct = await Product.findAll({
+    const deletedProduct = await Product.destroy({
       where: {
         id: req.params.id,
       },
@@ -140,7 +140,7 @@ router.delete("/:id", async (req, res) => {
       res.status(404).json({ error: "No product with this ID" });
     }
   } catch (error) {
-    res.status(505).json(error);
+    res.status(506).json(error);
   }
 });
 

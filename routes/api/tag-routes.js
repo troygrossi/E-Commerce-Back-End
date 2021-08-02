@@ -48,11 +48,7 @@ router.post("/", async (req, res) => {
   // create a new tag
   try {
     const newTag = await Tag.create({
-      include: [
-        {
-          tag_name: req.body.tag_name,
-        },
-      ],
+      tag_name: req.body.tag_name,
     });
     res.json(newTag);
   } catch (error) {
@@ -81,7 +77,7 @@ router.put("/:id", async (req, res) => {
 router.delete("/:id", async (req, res) => {
   // delete on tag by its `id` value
   try {
-    const deletedTag = await Tag.destroy(req.body, {
+    const deletedTag = await Tag.destroy({
       where: {
         id: req.params.id,
       },
