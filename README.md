@@ -6,7 +6,9 @@
 
 ## Link To Tutorial https://drive.google.com/file/d/1sVqQi_WJAc-iTfwPPckfSIWQXgUsde6J/view
 
-_due to not having the upgraded version of screencastify the video ends just a hair early_
+- _due to not having the upgraded version of screencastify the video ends just a hair early_
+
+- last part that cut off: https://drive.google.com/file/d/1rO9BF5ECWSSuLFrwMqeZ16Muk2UQXQd2/view
 
 </br>
 </br>
